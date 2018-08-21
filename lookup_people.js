@@ -27,7 +27,6 @@ client.connect((err) => {
         return console.error("error famous people query: ", err);
       } else {
         resultText(name, result.rows)
-      // console.log(result.rows);
       client.end();
       }
     })
